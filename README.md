@@ -178,4 +178,12 @@ Run the parser with a TIPS program:
 ./parser if_sample.pas
 
 
+## Concepts Demonstrated
+This project demonstrates several core programming language concepts:
+- Lexical analysis
+- Recursive-descent parsing
+- Grammar-based language processing
+- Parse tree construction
+- Symbol table management
+- Syntax error detection
 
