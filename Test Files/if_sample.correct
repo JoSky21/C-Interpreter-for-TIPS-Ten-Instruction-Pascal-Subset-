@@ -1,0 +1,243 @@
+INFO: Using the if_sample.pas file for input
+enter <program>
+    -->found PROGRAM
+    -->found CONVERT1
+    -->found ;
+    enter <block>
+        -->found VAR
+        -->found F
+        -->found :
+        -->found REAL
+        -->found ;
+
+        -->found C
+        -->found :
+        -->found REAL
+        -->found ;
+
+        enter <compound_statement>
+            -->found BEGIN
+            enter <statement>
+                enter <read>
+                    -->found READ
+                    -->found (
+                    -->found F
+                    -->found )
+                exit <read>
+            exit <statement>
+            -->found ;
+            enter <statement>
+                enter <if statement>
+                    -->found IF
+                    enter <expression>
+                        enter <simple expression>
+                            enter <term>
+                                enter <factor>
+                                    -->found F
+                                exit <factor>
+                            exit <term>
+                        exit <simple expression>
+                        -->found <
+                        enter <simple expression>
+                            enter <term>
+                                enter <factor>
+                                    -->found -
+                                    enter <factor>
+                                        -->found 100
+                                    exit <factor>
+                                exit <factor>
+                            exit <term>
+                        exit <simple expression>
+                    exit <expression>
+                    -->found THEN
+                    enter <statement>
+                        enter <compound_statement>
+                            -->found BEGIN
+                            enter <statement>
+                                enter <write>
+                                    -->found WRITE
+                                    -->found (
+                                    -->found 'TEMP IS TOO LOW'
+                                    -->found )
+                                exit <write>
+                            exit <statement>
+                            -->found ;
+                            enter <statement>
+                                enter <write>
+                                    -->found WRITE
+                                    -->found (
+                                    -->found 'IS IT REALLY THAT COLD'
+                                    -->found )
+                                exit <write>
+                            exit <statement>
+                            -->found END
+                        exit <compound_statement>
+                    exit <statement>
+                    -->found ELSE
+                    enter <statement>
+                        enter <compound_statement>
+                            -->found BEGIN
+                            enter <statement>
+                                enter <assignment>
+                                    -->found C
+                                    -->found :=
+                                    enter <expression>
+                                        enter <simple expression>
+                                            enter <term>
+                                                enter <factor>
+                                                    -->found (
+                                                    enter <expression>
+                                                        enter <simple expression>
+                                                            enter <term>
+                                                                enter <factor>
+                                                                    -->found F
+                                                                exit <factor>
+                                                            exit <term>
+                                                            -->found -
+                                                            enter <term>
+                                                                enter <factor>
+                                                                    -->found 32.0
+                                                                exit <factor>
+                                                            exit <term>
+                                                        exit <simple expression>
+                                                    exit <expression>
+                                                    -->found )
+                                                exit <factor>
+                                                -->found *
+                                                enter <factor>
+                                                    -->found (
+                                                    enter <expression>
+                                                        enter <simple expression>
+                                                            enter <term>
+                                                                enter <factor>
+                                                                    -->found 5.0
+                                                                exit <factor>
+                                                                -->found /
+                                                                enter <factor>
+                                                                    -->found 9.0
+                                                                exit <factor>
+                                                            exit <term>
+                                                        exit <simple expression>
+                                                    exit <expression>
+                                                    -->found )
+                                                exit <factor>
+                                            exit <term>
+                                        exit <simple expression>
+                                    exit <expression>
+                                exit <assignment>
+                            exit <statement>
+                            -->found ;
+                            enter <statement>
+                                enter <write>
+                                    -->found WRITE
+                                    -->found (
+                                    -->found ' FAHRENHEIT= '
+                                    -->found )
+                                exit <write>
+                            exit <statement>
+                            -->found ;
+                            enter <statement>
+                                enter <write>
+                                    -->found WRITE
+                                    -->found (
+                                    -->found F
+                                    -->found )
+                                exit <write>
+                            exit <statement>
+                            -->found ;
+                            enter <statement>
+                                enter <write>
+                                    -->found WRITE
+                                    -->found (
+                                    -->found ' CELSIUS= '
+                                    -->found )
+                                exit <write>
+                            exit <statement>
+                            -->found ;
+                            enter <statement>
+                                enter <write>
+                                    -->found WRITE
+                                    -->found (
+                                    -->found C
+                                    -->found )
+                                exit <write>
+                            exit <statement>
+                            -->found END
+                        exit <compound_statement>
+                    exit <statement>
+                exit <if statement>
+            exit <statement>
+            -->found END
+        exit <compound_statement>
+    exit <block>
+exit <program>
+
+=== GO BULLDOGS! Your parse was successful! ===
+
+User Defined Symbols:
+C
+F
+
+
+*** In order traversal of parse tree ***
+Program Name CONVERT1
+Begin Compound Statement
+Read Value F
+If expression( simple_expression( term( factor( F ) ) ) < simple_expression( term( factor( - factor( 100 ) ) ) ) )
+%%%%%%%% True Statement %%%%%%%%
+Begin Compound Statement
+Write String 'TEMP IS TOO LOW'
+Write String 'IS IT REALLY THAT COLD'
+End Compound Statement
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% False Statement %%%%%%%%
+Begin Compound Statement
+Assignment C := expression( simple_expression( term( nested_expression( expression( simple_expression( term( factor( F ) ) - term( factor( 32 ) ) ) ) ) * nested_expression( expression( simple_expression( term( factor( 5 ) / factor( 9 ) ) ) ) ) ) ) )
+Write String ' FAHRENHEIT= '
+Write Value F
+Write String ' CELSIUS= '
+Write Value C
+End Compound Statement
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+End Compound Statement
+
+
+*** Delete the parse tree ***
+Deleting a programNode
+Deleting a blockNode
+Deleting a compoundNode
+Deleting a readNode
+Deleting an ifNode
+Deleting an expressionNode
+Deleting a simpleExpressionNode
+Deleting a termNode
+Deleting a factorNode
+Deleting a simpleExpressionNode
+Deleting a termNode
+Deleting a factorNode
+Deleting a factorNode
+Deleting a compoundNode
+Deleting a writeNode
+Deleting a writeNode
+Deleting a compoundNode
+Deleting an assignmentNode
+Deleting an expressionNode
+Deleting a simpleExpressionNode
+Deleting a termNode
+Deleting a factorNode
+Deleting an expressionNode
+Deleting a simpleExpressionNode
+Deleting a termNode
+Deleting a factorNode
+Deleting a termNode
+Deleting a factorNode
+Deleting a factorNode
+Deleting an expressionNode
+Deleting a simpleExpressionNode
+Deleting a termNode
+Deleting a factorNode
+Deleting a factorNode
+Deleting a writeNode
+Deleting a writeNode
+Deleting a writeNode
+Deleting a writeNode

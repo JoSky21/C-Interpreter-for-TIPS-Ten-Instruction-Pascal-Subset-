@@ -1,0 +1,19 @@
+PROGRAM TEST;
+VAR
+  AAAA : REAL;
+  GUH : REAL;
+  SALT : REAL;
+  BOTLEFT : REAL;
+  WAH : REAL;
+BEGIN
+  WHILE 8
+    AAAA := (GUH * GUH * GUH / GUH) ;
+  WHILE 7
+  BEGIN
+    SALT := AAAA * GUH
+  END;
+  BOTLEFT := -7 * 6 / 3;
+  WRITE(SALT);
+  WRITE(AAAA);
+  WRITE(WAH)
+END
