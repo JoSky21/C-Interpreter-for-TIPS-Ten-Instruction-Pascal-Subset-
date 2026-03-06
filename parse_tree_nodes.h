@@ -1,13 +1,3 @@
-/**************************************************************************
- 
-  Name: Jonathan Harjono             NetID: jh4482
-  Course: CSE 4714              
-  Part 3: Building the Parse tree
-  Programming Environment: Visual Studio Code with WSL Ubuntu 20.04 using g++
-  Purpose of File: Parses through a TIPS program, checks for syntax errors, and build the parse tree.
-
-***************************************************************************/
-
 #ifndef PARSE_TREE_NODES_H 
 #define PARSE_TREE_NODES_H
 
@@ -20,7 +10,7 @@ using namespace std;
 
 // forward declarations of classes and functions
 //
-// TODO: add forward declarations so that your code will compile
+// Add forward declarations so that your code will compile
 //
 class ProgramNode;
 class BlockNode;
