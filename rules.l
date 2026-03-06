@@ -1,11 +1,3 @@
-/******************************************************************* 
-  Name: Jonathan             NetID: jh4482
-  Course: CSE 4714              
-  Part 2: Parsing
-  Programming Environment: Visual Studio Code with WSL Ubuntu 20.04 using g++
-  Purpose of File: Contains the rules for the regular expressions to test.
-
-*******************************************************************/
 %option yylineno
 %option noyywrap
 %{
