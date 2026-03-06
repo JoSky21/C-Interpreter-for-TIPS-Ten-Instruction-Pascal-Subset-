@@ -1,13 +1,3 @@
-/**************************************************************************
- 
-  Name: Jonathan Harjono             NetID: jh4482
-  Course: CSE 4714              
-  Part 3: Building the Parse tree
-  Programming Environment: Visual Studio Code with WSL Ubuntu 20.04 using g++
-  Purpose of File: Parses through a TIPS program, checks for syntax errors, and build the parse tree.
-
-***************************************************************************/
-
 #ifndef PRODUCTIONS_H
 #define PRODUCTIONS_H
 
