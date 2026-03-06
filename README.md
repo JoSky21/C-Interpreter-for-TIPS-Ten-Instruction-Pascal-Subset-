@@ -1,7 +1,6 @@
 # TIPS Interpreter using C++
 
 This projcet implements a recursive-descent parser for a simplified Pascal-like programming language called TIPS (Ten Instruction Pascal Subset). The parser reads a `.pas` program, checks it for syntax correctness, builds a parse tree, executes the code, and prints the resulting structure.
-This project is done in 2021
 
 ## Overview
 The program performs the following steps:
