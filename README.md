@@ -138,7 +138,7 @@ Build script used to compile the parser and lexer.
 
 ## Example Input
 Example TIPS program (if_sample.pas):
-
+```
 PROGRAM CONVERT1;
 VAR
    F : INTEGER;
@@ -149,16 +149,16 @@ BEGIN
    ELSE
       WRITE('FAHRENHEIT');
 END
-
+```
 ## Example Output
 After successful parsing the program prints:
-
+```
 User Defined Symbols:
 F
 
 *** In order traversal of parse tree ***
 Program Name CONVERT1
-...
+```
 The full expected output for each example program is provided in the .correct files.
 
 ## How to Build
