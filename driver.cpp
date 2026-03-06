@@ -64,7 +64,7 @@ int main(int argc, char* argv[]) {
     // Get the first token
     nextToken = yylex();
 
-    // Fire up the parser!
+    // Start the parser
     try {
         
         root = program();  // Process <program> production
@@ -79,8 +79,8 @@ int main(int argc, char* argv[]) {
         return EXIT_FAILURE;
     }
 
-    // Tell the world about our success!!
-    cout << endl << "=== GO BULLDOGS! Your parse was successful! ===" << endl;
+    // Success message
+    cout << endl << "=== Your parse was successful! ===" << endl;
   
 
     // Print out the symbol table
